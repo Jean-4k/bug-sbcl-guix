@@ -1,3 +1,4 @@
 (defsystem "bug-sbcl-guix"
   :components ((:file "package")
-	       (:file "éé")))
+	       (:module "éé"
+		:components ((:file "éé")))))
