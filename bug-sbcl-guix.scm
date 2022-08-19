@@ -13,7 +13,7 @@
     (source (git-checkout
              (url "https://github.com/Jean-4k/bug-sbcl-guix.git")
 	     (branch "main")
-	     (commit "2272e5fc7f0ec4036718db8510ff8d59f29659db")))
+	     (commit "fcc931f7718b25b961183cfd3d6048f1f3d2997d")))
     (build-system asdf-build-system/sbcl)
    (arguments
     '(#:asd-systems '("bug-sbcl-guix")))
