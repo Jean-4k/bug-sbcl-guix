@@ -1,0 +1,4 @@
+(channel
+  (version 0)
+  (url "https://github.com/Jean-4k/bug-sbcl-guix.git")
+  (branch "main"))
