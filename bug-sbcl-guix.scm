@@ -17,7 +17,8 @@
     (build-system asdf-build-system/sbcl)
    (arguments
     '(#:asd-systems '("bug-sbcl-guix")))
-    (synopsis "A bug on SBCL with guix.")
-    (description "A bug on SBCL with guix.")
-    (license "none")
-    (home-page "")))
+   (inputs `(("sbcl-dbi" ,sbcl-dbi)))
+   (synopsis "A bug on SBCL with guix.")
+   (description "A bug on SBCL with guix.")
+   (license "none")
+   (home-page "")))
