@@ -1,6 +1,7 @@
 Here is an .asd file with a basic `package.lisp`, and a file and folder with accents (letter `é`) : `éé/éé.lisp`. I've tried to construct a minimal setup which reproduces the issue on my laptop.
 
-I have asked a friend to do the `how to reproduce` part, but it works on his machine. I do not understand why, since I thought guix produces reproductible builds.
+* I have asked a friend to do the `how to reproduce` part, but it works on his machine. I do not understand why, since I thought guix produces reproductible builds.
+* But he too has an "accent bug" on another sbcl common lisp project which we are working on together.
 
 # logs
 
