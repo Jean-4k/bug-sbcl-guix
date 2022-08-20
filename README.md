@@ -6,6 +6,8 @@ Here is an .asd file with a basic `package.lisp`, and a file and folder with acc
 
 # logs
 
+## logs 1
+
 ```bash
 user@user-pc ~/bug-sbcl-guix$ guix build -f bug-sbcl-guix.scm
 /gnu/store/2ihxn6zs0bx4mj5qyxdfp01nlxdqzy8v-bug-sbcl-guix-1.0.0
@@ -22,6 +24,19 @@ dr-xr-xr-x 3 root root 4096 Jan  1  1970 ./
 dr-xr-xr-x 3 root root 4096 Jan  1  1970 ../
 dr-xr-xr-x 2 root root 4096 Jan  1  1970 éé/
 -r--r--r-- 1 root root 1296 Jan  1  1970 package.fasl
+```
+
+## logs 2
+
+```bash
+user@user-pc ~/bug-sbcl-guix$ guix build --log-file -f bug-sbcl-guix.scm
+/var/log/guix/drvs/m7/79ac2xnb22lqlp1s2zr7h130628cs4-bug-sbcl-guix-1.0.0.drv.gz
+user@user-pc ~/bug-sbcl-guix$ cp /var/log/guix/drvs/m7/79ac2xnb22lqlp1s2zr7h130628cs4-bug-sbcl-guix-1.0.0.drv.gz .
+user@user-pc ~/bug-sbcl-guix$ gzip -d 79ac2xnb22lqlp1s2zr7h130628cs4-bug-sbcl-guix-1.0.0.drv.gz 
+user@user-pc ~/bug-sbcl-guix$ cat 79ac2xnb22lqlp1s2zr7h130628cs4-bug-sbcl-guix-1.0.0.drv 
+grafting '/gnu/store/ccahjqdm68kv25b8mhrqlg9jy0zxcxgg-bug-sbcl-guix-1.0.0' -> '/gnu/store/zd713ab8pllzaja6g0gpjavrdnjkwb09-bug-sbcl-guix-1.0.0'...
+find-files: /gnu/store/ccahjqdm68kv25b8mhrqlg9jy0zxcxgg-bug-sbcl-guix-1.0.0/lib/common-lisp/sbcl/bug-sbcl-guix/????: No such file or directory
+find-files: /gnu/store/ccahjqdm68kv25b8mhrqlg9jy0zxcxgg-bug-sbcl-guix-1.0.0/share/common-lisp/sbcl/bug-sbcl-guix/????: No such file or directory
 ```
 
 # how to reproduce the bug
